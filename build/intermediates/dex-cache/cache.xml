@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/sovnem/AndroidStudioProjects/GIRLS/app/libs/universal-image-loader-1.9.3-with-sources.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="03e3948d42b8d78961a092a184af66bd86da42e6">
+        <dex dex="/Users/sovnem/AndroidStudioProjects/GIRLS/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3-with-sources-68900ff3591f37503e3ae8b25f6cb53cbdd348a3.jar" />
+    </item>
+    <item
+        jar="/Users/sovnem/android-sdks/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/sovnem/AndroidStudioProjects/GIRLS/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-e94594040c6eb64950c0f97229a3b16d5d307f12.jar" />
+    </item>
+
+</items>
