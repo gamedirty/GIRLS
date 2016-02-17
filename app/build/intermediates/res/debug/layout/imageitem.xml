@@ -2,6 +2,7 @@
 <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:id="@+id/imageview"
+           android:scaleType="centerCrop"
     android:layout_height="wrap_content"
     android:src="@drawable/self"
      >
