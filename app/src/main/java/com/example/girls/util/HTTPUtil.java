@@ -1,4 +1,6 @@
-package com.example.girls;
+package com.example.girls.util;
+
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -6,8 +8,6 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
-
-import android.util.Log;
 
 public class HTTPUtil {
 	private static String baiduMeinvUrl = "http://image.baidu.com/channel?c=%E7%BE%8E%E5%A5%B3#%E7%BE%8E%E5%A5%B3";

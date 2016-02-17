@@ -1,4 +1,4 @@
-package com.example.girls;
+package com.example.girls.data;
 
 public class BaiduImageBean {
 	private String id;

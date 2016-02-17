@@ -1,13 +1,4 @@
-package com.example.girls;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.ArrayList;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
+package com.example.girls.view;
 
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
@@ -23,6 +14,20 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.girls.R;
+import com.example.girls.data.BaiduImageBean;
+import com.example.girls.manager.HotGirlUrlManager;
+import com.example.girls.util.HTTPUtil;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 	private static final String LOADING = "加载中...";
