@@ -31,6 +31,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class MainActivity extends Activity implements AdapterView.OnItemClickListener, View.OnTouchListener {
     private static final String LOADING = "加载中...";
@@ -43,18 +45,31 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
     private int page = 1;
     private GirlsAdapter adapter;
     private View moreView;
+    private final int GET_MEINVINFO_SUCCESS = 1109;
+    private final int GET_FAIL = 1110;
+
     /**
      * @description 当前显示美妞种类
      */
     private String cls = "";
     private Handler handler = new Handler() {
         public void handleMessage(android.os.Message msg) {
+            switch (msg.what) {
+                case GET_FAIL:
+                    showNoMoreInfos();
+                    break;
+            }
             // 更新数据更新界面
             adapter.addData(dataAdd);
             resetMoreView();
             isLoading = false;
         }
     };
+
+    private void showNoMoreInfos() {
+        Toast.makeText(this, "没有更多的图片了", Toast.LENGTH_LONG).show();
+    }
+
     private ScrollView sc;
     private boolean isLoading;
 
@@ -119,6 +134,9 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
             public void run() {
                 tabs = HTTPUtil.getTabs();
+                //加入额外的种类
+                List<String> extraClasses = Arrays.asList(getResources().getStringArray(R.array.extraclasses));
+                tabs.addAll(extraClasses);
                 if (tabs != null && tabs.size() > 0) {
                     tabs.add(0, "品种选择(*^@^*)");
                     runOnUiThread(new Runnable() {
@@ -243,33 +261,40 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                 BaiduImageBean image = null;
                 JSONObject obj = new JSONObject(result);
                 JSONArray arr = obj.getJSONArray("imgs");
-                for (int i = 0; i < arr.length(); i++) {
-                    JSONObject b = arr.getJSONObject(i);
-                    image = new BaiduImageBean();
-                    // image.setDate(b.getString("date"));
-                    if (b.has("desc"))
-                        image.setDesc(b.getString("desc"));
-                    if (b.has("id"))
-                        image.setId(b.getString("id"));
-                    if (b.has("objUrl"))
-                        image.setObjUrl(b.getString("objUrl"));
-                    if (b.has("downloadUrl"))
-                        image.setDownloadUrl(b.getString("downloadUrl"));
-                    if (b.has("imageUrl"))
-                        image.setImageUrl(b.getString("imageUrl"));
-                    if (b.has("thumbnailUrl"))
-                        image.setThumbnailUrl(b.getString("thumbnailUrl"));
-                    if (b.has("thumbLargeUrl"))
-                        image.setThumbLargeUrl(b.getString("thumbLargeUrl"));
-                    if (b.has("thumbLargeTnUrl"))
-                        image.setThumbLargeTnUrl(b.getString("thumbLargeTnUrl"));
-                    if (b.has("title"))
-                        image.setTitle(b.getString("title"));
+                int len = arr.length();
+                Log.i("info", "数组个数:" + len);
+                if (len > 1) {
+                    for (int i = 0; i < arr.length(); i++) {
+                        JSONObject b = arr.getJSONObject(i);
+                        image = new BaiduImageBean();
+                        // image.setDate(b.getString("date"));
+                        if (b.has("desc"))
+                            image.setDesc(b.getString("desc"));
+                        if (b.has("id"))
+                            image.setId(b.getString("id"));
+                        if (b.has("objUrl"))
+                            image.setObjUrl(b.getString("objUrl"));
+                        if (b.has("downloadUrl"))
+                            image.setDownloadUrl(b.getString("downloadUrl"));
+                        if (b.has("imageUrl"))
+                            image.setImageUrl(b.getString("imageUrl"));
+                        if (b.has("thumbnailUrl"))
+                            image.setThumbnailUrl(b.getString("thumbnailUrl"));
+                        if (b.has("thumbLargeUrl"))
+                            image.setThumbLargeUrl(b.getString("thumbLargeUrl"));
+                        if (b.has("thumbLargeTnUrl"))
+                            image.setThumbLargeTnUrl(b.getString("thumbLargeTnUrl"));
+                        if (b.has("title"))
+                            image.setTitle(b.getString("title"));
 
-                    if (!TextUtils.isEmpty(image.getObjUrl()))
-                        dataAdd.add(image);
+                        if (!TextUtils.isEmpty(image.getObjUrl()))
+                            dataAdd.add(image);
+                    }
+                    handler.sendEmptyMessage(GET_MEINVINFO_SUCCESS);
+                } else {
+                    handler.sendEmptyMessage(GET_FAIL);
                 }
-                handler.sendEmptyMessage(0);
+
             } catch (Exception e) {
                 e.printStackTrace();
             }

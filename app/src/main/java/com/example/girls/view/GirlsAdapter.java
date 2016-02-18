@@ -76,7 +76,7 @@ public class GirlsAdapter extends BaseAdapter {
             viewHolder = (MyViewHolder) c.getTag(R.id.imageview);
         }
         viewHolder.iv.setLayoutParams(new ViewGroup.LayoutParams(width, width));
-        Glide.with(context).load(data.get(position).getThumbLargeUrl()).diskCacheStrategy(DiskCacheStrategy.ALL).into(viewHolder.iv);
+        Glide.with(context).load(data.get(position).getThumbnailUrl()).diskCacheStrategy(DiskCacheStrategy.ALL).centerCrop().into(viewHolder.iv);
 
 //        ImageLoader.getInstance().displayImage(data.get(position).getObjUrl(), iv, options, new ImageLoadingListener() {
 //

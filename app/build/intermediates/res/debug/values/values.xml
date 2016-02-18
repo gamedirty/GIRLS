@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/F:/ABOUTWORK/GitFuckyou/GIRLS/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <array name="extraclasses">
+        <item>大胸</item>
+        <item>性感</item>
+        <item>车模</item>
+        <item>萝莉</item>
+        <item>美臀</item>
+        <item>日本</item>
+        <item>韩国</item>
+        <item>欧美</item>
+        <item>日本</item>
+        <item>爆乳</item>
+        <item>翘臀</item>
+        <item>火辣</item>
+        <item>泳装</item>
+        <item>比基尼</item>
+
+    </array>
     <!-- From: file:/F:/ABOUTWORK/GitFuckyou/GIRLS/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
