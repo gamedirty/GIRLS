@@ -3,6 +3,7 @@ package com.example.girls.view;
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
@@ -197,17 +198,15 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         BaiduImageBean img = data.get(i);
-//        Intent intent = new Intent(this, ImageShowActivity.class);
+        Intent intent = new Intent(this, ImageShowActivity.class);
         Log.i("info", "图片路径:" + img.getObjUrl());
-//        intent.putExtra("obj", img);
+        intent.putExtra("obj", img);
+        startActivity(intent);
     }
 
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
         switch (motionEvent.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-
-                break;
             case MotionEvent.ACTION_MOVE:
                 int scrollY = view.getScrollY();
                 int height = view.getHeight();
@@ -219,7 +218,6 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                     }
                 }
                 break;
-
             default:
                 break;
         }

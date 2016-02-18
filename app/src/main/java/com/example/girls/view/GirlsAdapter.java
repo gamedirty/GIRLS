@@ -2,8 +2,6 @@ package com.example.girls.view;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap.Config;
-import android.graphics.BitmapFactory.Options;
 import android.util.DisplayMetrics;
 import android.util.SparseArray;
 import android.view.View;
@@ -15,15 +13,12 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.girls.R;
 import com.example.girls.data.BaiduImageBean;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
 import java.util.ArrayList;
 
 public class GirlsAdapter extends BaseAdapter {
     Context context;
     ArrayList<BaiduImageBean> data;
-    DisplayImageOptions options;
     private int width;
 
     public GirlsAdapter(Context context, ArrayList<BaiduImageBean> data) {
@@ -35,13 +30,6 @@ public class GirlsAdapter extends BaseAdapter {
         act.getWindowManager().getDefaultDisplay().getMetrics(dm);
         width = dm.widthPixels;
         width /= 3;
-        Options decodingOptions = new Options();
-        options = new DisplayImageOptions.Builder().imageScaleType(ImageScaleType.EXACTLY_STRETCHED).showImageOnFail(R.drawable.none).bitmapConfig(Config.RGB_565)
-                .decodingOptions(decodingOptions)./*
-                                                 * displayer ( new
-												 * RoundedBitmapDisplayer ( 15 )
-												 * ) .
-												 */build();
     }
 
     public void addData(ArrayList<BaiduImageBean> data) {
@@ -71,47 +59,13 @@ public class GirlsAdapter extends BaseAdapter {
             c = View.inflate(context, R.layout.imageitem, null);
             viewHolder = new MyViewHolder();
             viewHolder.iv = (ImageView) c.findViewById(R.id.imageview);
-            c.setTag(R.id.imageview,viewHolder);
+            c.setTag(R.id.imageview, viewHolder);
         } else {
             viewHolder = (MyViewHolder) c.getTag(R.id.imageview);
         }
         viewHolder.iv.setLayoutParams(new ViewGroup.LayoutParams(width, width));
         Glide.with(context).load(data.get(position).getThumbnailUrl()).diskCacheStrategy(DiskCacheStrategy.ALL).centerCrop().into(viewHolder.iv);
 
-//        ImageLoader.getInstance().displayImage(data.get(position).getObjUrl(), iv, options, new ImageLoadingListener() {
-//
-//            @Override
-//            public void onLoadingStarted(String imageUri, View view) {
-//                ImageView iv = (ImageView) view;
-//                iv.setImageResource(R.drawable.self);
-//            }
-//
-//            @Override
-//            public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
-//
-//            }
-//
-//            @Override
-//            public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-//                if (loadedImage != null) {
-//                    Options o = new Options();
-//                    int w = loadedImage.getWidth();
-//                    float scale = (float) width / (float) w;// 缩放比例
-//                    Log.i("info", "缩放比例：" + scale);
-//                    Matrix m = new Matrix();
-//                    m.postScale(scale, scale);
-//                    loadedImage = Bitmap.createBitmap(loadedImage, 0, 0, w, loadedImage.getHeight(), m, true);
-//                    Log.i("info", "后来的图片宽度:" + loadedImage.getWidth());
-//                    ImageView iv = (ImageView) view;
-//                    iv.setImageBitmap(loadedImage);
-//                }
-//            }
-//
-//            @Override
-//            public void onLoadingCancelled(String imageUri, View view) {
-//
-//            }
-//        });
         return c;
     }
 
