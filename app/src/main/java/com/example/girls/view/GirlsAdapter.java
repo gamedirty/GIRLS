@@ -5,18 +5,18 @@ import android.content.Context;
 import android.graphics.Bitmap.Config;
 import android.graphics.BitmapFactory.Options;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.girls.R;
 import com.example.girls.data.BaiduImageBean;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -34,7 +34,7 @@ public class GirlsAdapter extends BaseAdapter {
 
         act.getWindowManager().getDefaultDisplay().getMetrics(dm);
         width = dm.widthPixels;
-        Log.i("info", "屏幕宽：" + width);
+        width /= 3;
         Options decodingOptions = new Options();
         options = new DisplayImageOptions.Builder().imageScaleType(ImageScaleType.EXACTLY_STRETCHED).showImageOnFail(R.drawable.none).bitmapConfig(Config.RGB_565)
                 .decodingOptions(decodingOptions)./*
@@ -71,12 +71,12 @@ public class GirlsAdapter extends BaseAdapter {
             c = View.inflate(context, R.layout.imageitem, null);
             viewHolder = new MyViewHolder();
             viewHolder.iv = (ImageView) c.findViewById(R.id.imageview);
-            c.setTag(viewHolder);
+            c.setTag(R.id.imageview,viewHolder);
         } else {
-            viewHolder = (MyViewHolder) c.getTag();
+            viewHolder = (MyViewHolder) c.getTag(R.id.imageview);
         }
-        Picasso.with(context).load(data.get(position).getObjUrl()).into(viewHolder.iv);
-
+        viewHolder.iv.setLayoutParams(new ViewGroup.LayoutParams(width, width));
+        Glide.with(context).load(data.get(position).getThumbLargeUrl()).diskCacheStrategy(DiskCacheStrategy.ALL).into(viewHolder.iv);
 
 //        ImageLoader.getInstance().displayImage(data.get(position).getObjUrl(), iv, options, new ImageLoadingListener() {
 //

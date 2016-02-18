@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.3.2\d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27\picasso-2.3.2.jar"
+        jar="C:\Users\user\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
-        <dex dex="F:\ABOUTWORK\GitFuckyou\GIRLS\app\build\intermediates\pre-dexed\debug\picasso-2.3.2-7403eaedeebec0ca052c452eeb82ec3fcc3840ad.jar" />
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="F:\ABOUTWORK\GitFuckyou\GIRLS\app\build\intermediates\pre-dexed\debug\glide-3.7.0-56487dcc601537ec955eea625d9774ba24b2cff3.jar" />
     </item>
 
 </items>

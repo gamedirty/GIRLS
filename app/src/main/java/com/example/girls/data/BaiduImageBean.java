@@ -1,59 +1,96 @@
 package com.example.girls.data;
 
-public class BaiduImageBean {
-	private String id;
-	private String desc;
-	private String date;
-	private String objUrl;// 图片真实的地址
-	private int width;
-	private int height;
+import java.io.Serializable;
 
-	public String getId() {
-		return id;
-	}
+public class BaiduImageBean implements Serializable {
+    private String id;
+    private String desc;
+    private String date;
+    private String downloadUrl;
+    private String imageUrl;
+    private String thumbnailUrl;
+    private String thumbLargeUrl;
+    private String thumbLargeTnUrl;
+    private String title;
+    private String objUrl;// 图片真实的地址
 
-	public void setId(String id) {
-		this.id = id;
-	}
+    public String getId() {
+        return id;
+    }
 
-	public String getDesc() {
-		return desc;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	public void setDesc(String desc) {
-		this.desc = desc;
-	}
+    public String getDesc() {
+        return desc;
+    }
 
-	public String getDate() {
-		return date;
-	}
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
 
-	public void setDate(String date) {
-		this.date = date;
-	}
+    public String getDate() {
+        return date;
+    }
 
-	public String getObjUrl() {
-		return objUrl;
-	}
+    public void setDate(String date) {
+        this.date = date;
+    }
 
-	public void setObjUrl(String objUrl) {
-		this.objUrl = objUrl;
-	}
+    public String getDownloadUrl() {
+        return downloadUrl;
+    }
 
-	public int getWidth() {
-		return width;
-	}
+    public void setDownloadUrl(String downloadUrl) {
+        this.downloadUrl = downloadUrl;
+    }
 
-	public void setWidth(int width) {
-		this.width = width;
-	}
+    public String getImageUrl() {
+        return imageUrl;
+    }
 
-	public int getHeight() {
-		return height;
-	}
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
-	public void setHeight(int height) {
-		this.height = height;
-	}
+    public String getThumbnailUrl() {
+        return thumbnailUrl;
+    }
 
+    public void setThumbnailUrl(String thumbnailUrl) {
+        this.thumbnailUrl = thumbnailUrl;
+    }
+
+    public String getThumbLargeUrl() {
+        return thumbLargeUrl;
+    }
+
+    public void setThumbLargeUrl(String thumbLargeUrl) {
+        this.thumbLargeUrl = thumbLargeUrl;
+    }
+
+    public String getThumbLargeTnUrl() {
+        return thumbLargeTnUrl;
+    }
+
+    public void setThumbLargeTnUrl(String thumbLargeTnUrl) {
+        this.thumbLargeTnUrl = thumbLargeTnUrl;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getObjUrl() {
+        return objUrl;
+    }
+
+    public void setObjUrl(String objUrl) {
+        this.objUrl = objUrl;
+    }
 }
