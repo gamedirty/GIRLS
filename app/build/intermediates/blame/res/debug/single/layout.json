@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Volumes/工作相关/GIRLS/app/build/intermediates/res/merged/debug/layout/activity_image_show.xml",
+        "source": "/Volumes/工作相关/GIRLS/app/src/main/res/layout/activity_image_show.xml"
+    },
+    {
+        "merged": "/Volumes/工作相关/GIRLS/app/build/intermediates/res/merged/debug/layout/imageitem.xml",
+        "source": "/Volumes/工作相关/GIRLS/app/src/main/res/layout/imageitem.xml"
+    },
+    {
+        "merged": "/Volumes/工作相关/GIRLS/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Volumes/工作相关/GIRLS/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Volumes/工作相关/GIRLS/app/build/intermediates/res/merged/debug/layout/moreview.xml",
+        "source": "/Volumes/工作相关/GIRLS/app/src/main/res/layout/moreview.xml"
+    }
+]
