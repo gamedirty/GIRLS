@@ -1,0 +1,90 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen### Actionscript template
+# Build and Release Folders
+bin/
+bin-debug/
+bin-release/
+[Oo]bj/ # FlashDevelop obj
+[Bb]in/ # FlashDevelop bin
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+
+.gradle/2.14.1/
+app/build/generated/assets/
+app/build/generated/res/
+app/build/generated/source/aidl/
+app/build/generated/source/r/androidTest/
+app/build/generated/source/rs/
+app/build/intermediates/assets/
+app/build/intermediates/blame/res/androidTest/
+app/build/intermediates/bundles/
+app/build/intermediates/classes/debug/com/bm/
+app/build/intermediates/classes/debug/com/example/girls/Introductions.class
+app/build/intermediates/classes/debug/com/example/girls/R$array.class
+app/build/intermediates/classes/debug/com/example/girls/data/
+app/build/intermediates/classes/debug/com/example/girls/game/
+app/build/intermediates/classes/debug/com/example/girls/manager/
+app/build/intermediates/classes/debug/com/example/girls/util/
+app/build/intermediates/classes/debug/com/example/girls/view/
+app/build/intermediates/dependency-cache/
+app/build/intermediates/exploded-aar/com.bm.photoview/library/1.3.6/aidl/
+app/build/intermediates/exploded-aar/com.bm.photoview/library/1.3.6/assets/
+app/build/intermediates/exploded-aar/com.bm.photoview/library/1.3.6/res/
+app/build/intermediates/incremental-classes/
+app/build/intermediates/incremental-runtime-classes/
+app/build/intermediates/incremental-safeguard/
+app/build/intermediates/incremental-verifier/
+app/build/intermediates/incremental/mergeDebugAndroidTestShaders/
+app/build/intermediates/incremental/mergeDebugJniLibFolders/
+app/build/intermediates/incremental/mergeDebugShaders/
+app/build/intermediates/instant-run-support/
+app/build/intermediates/jniLibs/
+app/build/intermediates/manifest/tmp/
+app/build/intermediates/reload-dex/
+app/build/intermediates/res/merged/androidTest/
+app/build/intermediates/restart-dex/
+app/build/intermediates/rs/
+app/build/intermediates/shaders/
+app/build/intermediates/symbols/androidTest/
+app/build/intermediates/transforms/
+app/build/tmp/
+projectFilesBackup/
+app/build/intermediates/blame/res/debug/single/drawable-hdpi.json
+app/build/intermediates/blame/res/debug/single/drawable-mdpi.json
+app/build/intermediates/blame/res/debug/single/drawable-xhdpi.json
+app/build/intermediates/blame/res/debug/single/drawable-xxhdpi.json
+app/build/intermediates/incremental/mergeDebugAndroidTestResources/aapt-temp/
+app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties
+app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/
+app/build/intermediates/incremental/mergeDebugResources/aapt-temp/
+app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties
+app/build/intermediates/incremental/mergeDebugResources/merged.dir/
+app/build/intermediates/incremental/processDebugAndroidTestResources/
+app/build/intermediates/incremental/processDebugResources/
+app/build/intermediates/manifests/instant-run/
+app/build/intermediates/res/merged/debug/drawable-hdpi/
+app/build/intermediates/res/merged/debug/drawable-mdpi/
+app/build/intermediates/res/merged/debug/drawable-xhdpi/
+app/build/intermediates/res/merged/debug/drawable-xxhdpi/
+app/build/generated/source/apt/
+app/build/intermediates/incremental/packageDebug/
+app/build/intermediates/incremental/packageInstantRunResourcesDebug/
+app/build/intermediates/instant-run-resources/

@@ -2,15 +2,86 @@
 <items version="2" >
 
     <item
+        is-multidex="true"
+        jar="/Users/sovnem/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_4f266921fd71d79c4a39db1cc42c6762d68e8db8/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/工作相关/GIRLS/app/build/intermediates/exploded-aar/com.bm.photoview/library/1.3.6/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ac0d958638682d312195173403cb207e49738f97">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.bm.photoview-library-1.3.6_fcd39a1b9fc0e901c66a914026afaf5dc2a024ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/工作相关/GIRLS/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="91ddb3a1d106b7abfa67830cd36df1b04a741a29">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0cfdd3d66242f5a1bb196e4c5c669b001e517cec/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sovnem/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.3.2/d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27/picasso-2.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.3.2_0f0374bae1cc1c81e68d83f858859f2f3c0ac99a/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/工作相关/GIRLS/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="723f2473313813338279a4c487190253e3b756ad">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0cfdd3d66242f5a1bb196e4c5c669b001e517cec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/sovnem/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
-        jumboMode="false"
+        jumboMode="true"
+        optimize="true"
         revision="23.0.2"
         sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="/Users/sovnem/AndroidStudioProjects/GIRLS/app/build/intermediates/pre-dexed/debug/glide-3.7.0_1c9e88b77d2a081622a8763e3dd7c08e340443d3.jar" />
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_1c9e88b77d2a081622a8763e3dd7c08e340443d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/工作相关/GIRLS/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="aa81ef54f7d91b8e8f4acbf5697bf8bfb8eb6f6a">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_88e8b77a3df9b489f9c2a5c014c9260c78256584/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Volumes/工作相关/GIRLS/app/build/intermediates/exploded-aar/com.bm.photoview/library/1.3.6/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ac0d958638682d312195173403cb207e49738f97">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.bm.photoview-library-1.3.6_fcd39a1b9fc0e901c66a914026afaf5dc2a024ab/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sovnem/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_4f266921fd71d79c4a39db1cc42c6762d68e8db8/classes.dex" />
     </item>
     <item
         jar="/Users/sovnem/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.3.2/d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27/picasso-2.3.2.jar"
         jumboMode="false"
+        optimize="true"
         revision="23.0.2"
         sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
         <dex dex="/Users/sovnem/AndroidStudioProjects/GIRLS/app/build/intermediates/pre-dexed/debug/picasso-2.3.2_0f0374bae1cc1c81e68d83f858859f2f3c0ac99a.jar" />
@@ -18,6 +89,7 @@
     <item
         jar="/Users/sovnem/AndroidStudioProjects/GIRLS/app/build/intermediates/exploded-aar/com.bm.photoview/library/1.3.6/jars/classes.jar"
         jumboMode="false"
+        optimize="true"
         revision="23.0.2"
         sha1="ac0d958638682d312195173403cb207e49738f97">
         <dex dex="/Users/sovnem/AndroidStudioProjects/GIRLS/app/build/intermediates/pre-dexed/debug/com.bm.photoview-library-1.3.6_7ffbded7cb65c5b6ce449a77d5dbb5c5827d0c5d.jar" />
@@ -25,9 +97,43 @@
     <item
         jar="/Users/sovnem/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
         jumboMode="false"
+        optimize="true"
         revision="23.0.2"
         sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
         <dex dex="/Users/sovnem/AndroidStudioProjects/GIRLS/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0_4f266921fd71d79c4a39db1cc42c6762d68e8db8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/sovnem/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.3.2/d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27/picasso-2.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.3.2_0f0374bae1cc1c81e68d83f858859f2f3c0ac99a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sovnem/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/sovnem/AndroidStudioProjects/GIRLS/app/build/intermediates/pre-dexed/debug/glide-3.7.0_1c9e88b77d2a081622a8763e3dd7c08e340443d3.jar" />
+    </item>
+    <item
+        jar="/Volumes/工作相关/GIRLS/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="850657776975fc4d355d793f7df6c01807b30001">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_88e8b77a3df9b489f9c2a5c014c9260c78256584/classes.dex" />
+    </item>
+    <item
+        jar="/Users/sovnem/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Volumes/工作相关/GIRLS/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_1c9e88b77d2a081622a8763e3dd7c08e340443d3/classes.dex" />
     </item>
 
 </items>

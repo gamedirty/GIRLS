@@ -8,10 +8,6 @@
         "source": "/Volumes/工作相关/GIRLS/app/src/main/res/drawable-xhdpi/none.jpg"
     },
     {
-        "merged": "/Volumes/工作相关/GIRLS/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
-        "source": "/Volumes/工作相关/GIRLS/app/src/main/res/drawable-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Volumes/工作相关/GIRLS/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/self.jpg",
         "source": "/Volumes/工作相关/GIRLS/app/src/main/res/drawable-xhdpi/self.jpg"
     }
